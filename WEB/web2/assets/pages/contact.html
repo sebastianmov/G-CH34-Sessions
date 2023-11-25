@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <section>
+            <form action="https://formsubmit.co/ing.montesdeoca94@gmail.com" method="post"> <!-- Action = Atributo para colocar la URL a la que se enviara la info del formulario. Method = Indica el tipo de metodo http que utilizaremos. -->
+
+                <fieldset> <!-- Permite agrupar por campos -->
+                    <legend>Datos basicos de contacto</legend>
+                    Nombre: <input type="text" placeholder="Nancy">
+                    <br>
+                    <br>
+                    <!-- Es importante colocar el atributo name, porque es el nombre del elemento utilizado por el servidor para identificar los campos en el envio del formulario -->
+                    Apellido: <input type="text" placeholder="Moreno">
+                    <br>
+                    <br>
+                    Correo electronico: <input type="email" placeholder="nancymoreno@gmail.com">
+                    <br>
+                    <br>
+                    <label for="telephone">Telefono: <input id="telephone" type="tel" placeholder="0123456789" maxlength="10"></label>
+                    <br>
+                    <br>
+                    <input type="submit"> <!-- Boton -->
+                    <button type="submit">Enviar</button> <!-- Boton con texto personalizado -->
+
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    Numero de tamales: <input type="number" min="30" max="300" required>
+                    <br>
+                    <br>
+                    Litros de atole: <input type="number" min="30" max="50">
+                    <br>
+                    <br>
+                    Fecha del evento: <input type="date" required>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Datos del envío</legend>
+                    <select name="stores" id="stores">
+                        <option value="Elegir Sucursal">Elegir sucursal</option>
+                        <option value="Sucursal Atizapan de Zaragoza">Sucursal Atizapan de Zaragoza</option>
+                        <option value="Sucursal Magdalena Contreras">Sucursal Magdalena Contreras</option>
+                        <option value="Sucursal Coyoacan">Sucursal Coyoacan</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input list="branch">
+                    <datalist id="branch">
+                        <option value="Sucursal Atizapan de Zaragoza">Sucursal Atizpan de Zaragoza</option>
+                        <option value="Sucursal Magdalena Contreras">Sucursal Magdalena Contreras</option>
+                        <option value="Sucursal Coyoacan">Sucursal Coyoacan</option>
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="pick-up"><input id="pick-up" type="radio" name="type-of-delivery">Recoger en sucursal</label>
+                    <label for="delivery"><input id="delivery" type="radio" name="type-of-delivery">Envío a domicilio</label>
+                    
+                    <br>
+                    <br>
+                    <!-- Casilla de verificación -->
+                    <label for="terms"><input id="terms" type="checkbox" required>Acepto los términos y condiciones</label>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar pedido</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

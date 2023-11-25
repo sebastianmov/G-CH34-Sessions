@@ -1,0 +1,91 @@
+/* Se establecen variables */
+:root{
+    --blue1:#6495ed;
+    --blue2:#afeeee;
+}
+/* Reiniciar los estilos que vienen por defecto del navegador */
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/* Propiedad display: tiene que ver con elementos en linea y bloque.
+Block, inline */
+
+body{
+    background: linear-gradient(180deg,var(--blue2)0%,var(--blue1)100%)
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Estilizar barra de navegacion */
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+/* Referenciamos el id del article de nuestra nueva seccion */
+#cards-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container{
+    border: 4px solid white;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0,2,2,2.5);
+    flex: 0 0 30%;
+    max-width: 100%;
+    padding: 20 px;
+    background-color:#afeeee;
+}
+
+.card-image{
+    width: 100%;
+    /* 4 valores: desplazamiento horizontal, vertical, difuminado, color */
+    filter: drop-shadow(0 0 10px orange)
+}
+
+.card-title{
+    font-size: 20px;
+    color: chocolate;
+}
+
+h3:hover{
+    background-color: darkkhaki;
+}
+
+/* Pseudoelementos */
+h3::first-letter{
+    color: black;
+}
+
+.card-description{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-card{
+    background: linear-gradient()
+}

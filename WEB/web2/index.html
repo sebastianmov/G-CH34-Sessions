@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!-- Indica el tipo de documento -->
+<html lang="en"> <!-- Establecer un lenguaje madre en tu pagina -->
+    <head> <!-- Inicio del Titulo -->
+        <meta charset="UTF-8"> <!-- Indica al navegador el tipo de codificacion que se debe utilizar para representar  -->
+        <meta name="description" content="En este sitio..."> <!-- Descripcion -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Util para que sea adaptable, hace que el ancho del contenido sea el ancho de la pantalla -->
+        <meta name="robots" content="index, follow"> <!-- SEO -->
+        <title>Mi primer HTML</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/xicon" href="./assets/img/casa.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+        <!-- Estilo con enlace externo -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Estilo interno -->
+        <style>
+            p {
+                color:chocolate;
+            }
+        </style>
+    </head> <!-- Cierre del titulo -->
+    <body> <!-- Inicio del cuerpo -->
+        <h1> Sobre mi: Sebastian Montes de Oca </h1> <!-- Tenemos del h1 al h6 para encabezados -->
+
+        <img id="profile-photo"
+        src="assets/img/unnamed.png" alt="Foto de Sebastian vestido de camisa azul clara, viendo al frente con fondo blanco" title="Foto de Sebastian Montes de Oca" width="200px" height="200px">
+
+        <p style="color:blueviolet; text-align:center; "> Soy Ingeniero de minas y metalurgia, titulado de la facultad de Ingenieria. <!-- Estilo en linea -->
+            Actualmente estoy en un bootcamp para ser <strong>Desarrollador Java Fullstack</strong>.
+        </p>
+        
+        <p> Mi top 5 de canciones <strong>favoritas</strong> del momento son:</p>
+
+        <!-- Tenemos 3 tipos de listas: ordenadas, desordenadas y de descripcion -->
+
+        <ol> <!-- Lista ordenada -->
+            <li> <i>Un Preview</i> - <strong>Bad Bunny</strong> </li>
+            <li> <i>Germination</i> - <strong>Simon Posford, Shpongle</strong> </li>
+            <li> <i>Hammock therapy</i> - <strong>Shpongle</strong> </li>
+            <li> <i>Poison Lips</i> - <strong>Vitalic</strong> </li>
+            <li> <i>Tu Gato Bellaco (Remix)</i> - <strong>Milo Mae, Kevin Roldan</strong> </li>
+        </ol>
+
+        <p> Mis cosas favs del mundo son:</p>
+        
+        <ul> <!-- Lista desordenada -->
+            <li>Sabor de helado: Fresas con crema</li>
+            <li>Comida: Cochinita Pibil</li>
+            <li>Musica: Trance</li>
+            <li>Color: Verde</li>
+            <li>Pelicula: <i>Interstellar</i></li>
+        </ul>
+
+        <p>Te dejo una foto de un gatito</p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Minino color anaranjado con tonos blancuzcos, volteando a la camara y se encuentra patas para arriba" title="Minino adorable">
+
+        <p> Recetas de cocina</p>
+
+        <dl> <!-- Lista descriptiva -->
+            <dt> Sandwich de jamon </dt> <!-- Elemento a describir -->
+            <br>
+            <dd> Pan Bimbo con mayonesa untada, al interior lleva dos rebanadas de jamon con jitomate, cebolla y lechuga. </dd> <!-- Descripcion -->
+            <br>
+            <dt> Tamal de hoja de maiz </dt>
+            <br>
+            <dd> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut exercitationem facere optio tempore vitae expedita a odio dolor? Praesentium placeat ea voluptates, facilis veritatis provident? Nesciunt necessitatibus corrupti ratione! </dd>
+        </dl>
+
+        <!-- Elementos en linea y bloque -->
+        <p>Elemento en bloque</p><p>Elemento en bloque</p>
+        <span>Elemento en linea</span><span>Elemento en linea</span>
+
+        <br>
+
+        <!-- Tablas -->
+        <table>
+            <thead> <!-- Encabezado de la tabla -->
+                <tr>
+                    <th colspan="5">Promociones de la semana</th>
+                    <th colspan="2">Promociones del fin de semana</th>
+                </tr>
+
+                <tr> <!-- Table row(fila) -->
+                    <th class="tamales-header-items">Tamales sencillos</th> <!-- Celdas de encabezado -->
+                    <th class="tamales-header-items">Tortas</th>
+                    <th class="tamales-header-items">Atoles</th>
+                    <th class="tamales-header-items">Tamales especiales</th>
+                    <th class="tamales-header-items">Tamales especiales oaxaqueños</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Cuerpo de la tabla -->
+                <tr>
+                    <td>$15.00 MXN</td> <!-- Datos de la tabla -->
+                    <td>$18.00 MXN</td>
+                    <td>$35.00 MXN</td>
+                    <td>$20.00 MXN</td>
+                    <td>$30.00 MXN</td>
+                </tr>
+                <tr>
+                    <td>$0.86 USD</td>
+                    <td>$1.03 USD</td>
+                    <td>$2 USD</td>
+                    <td>$1.14 USD</td>
+                    <td>$1.71 USD</td>
+                </tr>
+            </tbody>
+        </table>
+    <br>
+    <br>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">Promociones de la semana</th>
+                    <th colspan="2">Promociones del fin de semana</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                    <td>SABADO</td>
+                    <td>DOMINGO</td>
+                </tr>
+                <tr>
+                    <td>Tamal sencillo + Atole</td>
+                    <td>Torta + Atole</td>
+                    <td>Tamal especial + Atole</td>
+                    <td>Tamal sencillo + Tamal especial</td>
+                    <td>Tamal especial oaxaqueño + Atole</td>
+                    <td>3 tamales sencillo</td>
+                    <td>3 tamales especiales oaxaqueños</td>
+                </tr>
+                <tr>
+                    <td colspan="2">$45.00 MXN</td>
+                    <td>$50.00 MXN</td>
+                    <td>$30.00 MXN</td>
+                    <td>$60.00 MXN</td>
+                    <td>$40.00 MXN</td>
+                    <td>$80.00 MXN</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body> <!-- Cierre del cuerpo -->
+</html>

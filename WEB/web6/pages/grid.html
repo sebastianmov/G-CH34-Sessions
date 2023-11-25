@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .row{
+            background-color: peru;
+            border: 4px solid brown;
+            padding: 5px;
+            margin: 10px;
+            -ms-grid-row-align: center;
+        }
+
+        .col{
+            background-color: cadetblue;
+            border: 4px solid darkcyan;
+            padding: 5px;
+            margin: 10px;
+            -ms-grid-column-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Grid: Las columnas de una fila deben sumar 12.
+    Hay elementos de una fila que pueden ocupar varias columnas.
+    Si suman mas de 12 columnas, las columnas adicionales se colocan en una nueva linea -->
+
+    <div class="container">
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="col">
+                Columna 1
+            </div>
+            <div class="col">
+                Columna 2
+            </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="row">
+            <div class="col">
+                Columna 1
+            </div>
+            <div class="col">
+                Columna 2
+            </div>
+            <div class="col">
+                Columna 3
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
